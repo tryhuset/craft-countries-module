@@ -10,6 +10,23 @@ This module requires Craft CMS 3.0.0-RC1 or later.
 
 To install the module, follow these instructions.
 
+First add repo to your composer.json
+```
+...
+"repositories": [
+  ...
+  {
+    "type": "vcs",
+    "url": "https://git1.apt.no/open/craft-countries-module.git"
+  }
+],
+...
+```
+
+```
+composer require apt/craft-countries-module
+```
+
 First, you'll need to add the contents of the `app.php` file to your `config/app.php` (or just copy it there if it does not exist). This ensures that your module will get loaded for each request. The file might look something like this:
 ```
 return [
@@ -37,21 +54,41 @@ You'll also need to make sure that you add the following to your project's `comp
 After you have added this, you will need to do:
 
     composer dump-autoload
- 
+
  …from the project’s root directory, to rebuild the Composer autoload map. This will happen automatically any time you do a `composer install` or `composer update` as well.
-
-## Craft Countries Module Overview
-
--Insert text here-
 
 ## Using Craft Countries Module
 
--Insert text here-
+### Twig:
 
-## Craft Countries Module Roadmap
+#### List all countries
+```
+{% for country in craft.countries.list %}
+  {{ country.code }}
+  {{ country.name }}
+{% endfor %}
+```
+#### Get country by code
+```
+{% set country = craft.countries.get('NO') %}
+code: {{ country.code }}
+name: {{ country.name }}
+```
 
-Some things to do, and ideas for potential features:
+### PHP
 
-* Release it
+#### List all countries
+```
+$countries = Craft::$app->getModule('countries')->service->getCountries();
+foreach($countries as $country) {
+  echo $country->code;
+  echo $country->name;
+}
+```
+#### Get country by code
+```
+$countries = Craft::$app->getModule('countries')->service->getCountryCode('NO');
+echo $country->name;
+```
 
 Brought to you by [Thomas Sømoen](https://apt.no/)
