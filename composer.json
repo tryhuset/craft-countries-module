@@ -1,0 +1,36 @@
+{
+    "name": "apt/craft-countries-module",
+    "description": "Add list of countries",
+    "type": "craft-module",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-module",
+        "craft countries"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Sømoen",
+            "homepage": "https://apt.no/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "apt\\craftcountriesmodule\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft Countries Module",
+        "handle": "craft-countries-module",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://git1.apt.no/open/craft-countries-modules/craft-countries-modules/blob/master/CHANGELOG.md",
+        "class": "apt\\craftcountriesmodule\\CraftCountriesModule"
+    }
+}

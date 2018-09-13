@@ -1,0 +1,22 @@
+{
+  "pluginName":"Craft Countries Module",
+  "pluginDescription":"Add list of countries",
+  "pluginVersion":"1.0.0",
+  "pluginAuthorName":"Thomas Sømoen",
+  "pluginAuthorUrl":"https://apt.no/",
+  "codeComments":"",
+  "pluginComponents":["models","services","variables"],
+  "consolecommandName":"",
+  "controllerName":"",
+  "cpsectionName":"",
+  "elementName":"",
+  "fieldName":"",
+  "modelName":"Country",
+  "purchasableName":"",
+  "recordName":"",
+  "serviceName":"Service",
+  "taskName":"",
+  "utilityName":"",
+  "widgetName":"",
+  "apiVersion":"module_api_version_3_0"
+}
