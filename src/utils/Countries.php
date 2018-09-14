@@ -277,14 +277,13 @@ Class Countries
      */
     public function getCountryByCode($code)
     {
-        $country = null;
         foreach ($this->countries as $country) {
             if ($country->code === $code) {
-                break;
+                return $country;
             }
         }
 
-        return $country;
+        return null;
     }
 
     /*

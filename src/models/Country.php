@@ -13,6 +13,7 @@ namespace apt\craftcountriesmodule\models;
 use Craft;
 use craft\base\Model;
 use apt\craftcountriesmodule\CraftCountriesModule;
+use apt\craftcountriesmodule\validators\CountryValidator;
 
 
 
@@ -41,6 +42,7 @@ class Country extends Model
         return [
             [['code', 'name'], 'string'],
             [['code', 'name'], 'default', 'value' => ''],
+            ['code', CountryValidator::class],
         ];
     }
 }
