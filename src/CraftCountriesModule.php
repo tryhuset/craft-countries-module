@@ -45,6 +45,8 @@ class CraftCountriesModule extends Module
      */
     public static $instance;
 
+    public $controllerNamespace = "modules/craftcountriesmodule/controllers";
+
     public static function register()
     {
         // Check to see if the Module is registered
