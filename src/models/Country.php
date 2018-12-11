@@ -34,6 +34,11 @@ class Country extends Model
      */
     public $name = '';
 
+    public function __toString()
+    {
+        return $this->name;
+    }
+
     /**
      * @inheritdoc
      */

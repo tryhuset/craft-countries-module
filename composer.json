@@ -2,7 +2,7 @@
   "name": "apt/craft-countries-module",
   "description": "Add list of countries",
   "type": "craft-module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "craft",
     "cms",
