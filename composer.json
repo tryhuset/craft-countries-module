@@ -2,7 +2,7 @@
   "name": "apt/craft-countries-module",
   "description": "Add list of countries",
   "type": "craft-module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "craft",
     "cms",
@@ -18,7 +18,7 @@
     }
   ],
   "require": {
-    "craftcms/cms": "^3.0"
+    "craftcms/cms": "3.*"
   },
   "autoload": {
     "psr-4": {
