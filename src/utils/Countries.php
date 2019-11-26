@@ -268,7 +268,7 @@ Class Countries
         }, $this->countries, array_keys($this->countries));
 
          usort($this->countries, function($a, $b) {
-            return strcasecmp($a->name, $a->name);
+            return strcasecmp($a->name, $b->name);
         });
     }
 
