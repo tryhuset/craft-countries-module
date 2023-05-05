@@ -42,7 +42,7 @@ class Country extends Model
     /**
      * @inheritdoc
      */
-    public function rules()
+    public function rules(): array
     {
         return [
             [['code', 'name'], 'string'],

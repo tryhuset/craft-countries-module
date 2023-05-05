@@ -25,7 +25,7 @@ class Service extends Component
 {
     private $countries;
 
-    public function init()
+    public function init(): void
     {
         $this->countries = new Countries();
         parent::init();
