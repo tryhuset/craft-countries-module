@@ -1,10 +1,10 @@
-# Craft Countries Module module for Craft CMS 3.x
+# Craft Countries Module module for Craft CMS 5.x
 
 Add list of countries
 
 ## Requirements
 
-This module requires Craft CMS 3.0.0-RC1 or later.
+This module requires Craft CMS 5.0.0 or later and PHP 8.2 or later.
 
 ## Installation
 
